@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9104E488259B201500C68B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E487259B201500C68B97 /* AppDelegate.swift */; };
+		9104E48A259B201500C68B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E489259B201500C68B97 /* SceneDelegate.swift */; };
+		9104E48C259B201500C68B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E48B259B201500C68B97 /* ViewController.swift */; };
+		9104E48F259B201500C68B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9104E48D259B201500C68B97 /* Main.storyboard */; };
+		9104E491259B201800C68B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9104E490259B201800C68B97 /* Assets.xcassets */; };
+		9104E494259B201800C68B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9104E492259B201800C68B97 /* LaunchScreen.storyboard */; };
+		9104E49F259B201800C68B97 /* SugarBoxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E49E259B201800C68B97 /* SugarBoxAppTests.swift */; };
+		9104E4AA259B201800C68B97 /* SugarBoxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E4A9259B201800C68B97 /* SugarBoxAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9104E49B259B201800C68B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9104E47C259B201500C68B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9104E483259B201500C68B97;
+			remoteInfo = SugarBoxApp;
+		};
+		9104E4A6259B201800C68B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9104E47C259B201500C68B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9104E483259B201500C68B97;
+			remoteInfo = SugarBoxApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9104E484259B201500C68B97 /* SugarBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9104E487259B201500C68B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9104E489259B201500C68B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9104E48B259B201500C68B97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9104E48E259B201500C68B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9104E490259B201800C68B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9104E493259B201800C68B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9104E495259B201800C68B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9104E49A259B201800C68B97 /* SugarBoxAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarBoxAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9104E49E259B201800C68B97 /* SugarBoxAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarBoxAppTests.swift; sourceTree = "<group>"; };
+		9104E4A0259B201800C68B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9104E4A5259B201800C68B97 /* SugarBoxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarBoxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9104E4A9259B201800C68B97 /* SugarBoxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarBoxAppUITests.swift; sourceTree = "<group>"; };
+		9104E4AB259B201800C68B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9104E481259B201500C68B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104E497259B201800C68B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104E4A2259B201800C68B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9104E47B259B201500C68B97 = {
+			isa = PBXGroup;
+			children = (
+				9104E486259B201500C68B97 /* SugarBoxApp */,
+				9104E49D259B201800C68B97 /* SugarBoxAppTests */,
+				9104E4A8259B201800C68B97 /* SugarBoxAppUITests */,
+				9104E485259B201500C68B97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9104E485259B201500C68B97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9104E484259B201500C68B97 /* SugarBoxApp.app */,
+				9104E49A259B201800C68B97 /* SugarBoxAppTests.xctest */,
+				9104E4A5259B201800C68B97 /* SugarBoxAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9104E486259B201500C68B97 /* SugarBoxApp */ = {
+			isa = PBXGroup;
+			children = (
+				9104E487259B201500C68B97 /* AppDelegate.swift */,
+				9104E489259B201500C68B97 /* SceneDelegate.swift */,
+				9104E48B259B201500C68B97 /* ViewController.swift */,
+				9104E48D259B201500C68B97 /* Main.storyboard */,
+				9104E490259B201800C68B97 /* Assets.xcassets */,
+				9104E492259B201800C68B97 /* LaunchScreen.storyboard */,
+				9104E495259B201800C68B97 /* Info.plist */,
+			);
+			path = SugarBoxApp;
+			sourceTree = "<group>";
+		};
+		9104E49D259B201800C68B97 /* SugarBoxAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9104E49E259B201800C68B97 /* SugarBoxAppTests.swift */,
+				9104E4A0259B201800C68B97 /* Info.plist */,
+			);
+			path = SugarBoxAppTests;
+			sourceTree = "<group>";
+		};
+		9104E4A8259B201800C68B97 /* SugarBoxAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9104E4A9259B201800C68B97 /* SugarBoxAppUITests.swift */,
+				9104E4AB259B201800C68B97 /* Info.plist */,
+			);
+			path = SugarBoxAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9104E483259B201500C68B97 /* SugarBoxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9104E4AE259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxApp" */;
+			buildPhases = (
+				9104E480259B201500C68B97 /* Sources */,
+				9104E481259B201500C68B97 /* Frameworks */,
+				9104E482259B201500C68B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SugarBoxApp;
+			productName = SugarBoxApp;
+			productReference = 9104E484259B201500C68B97 /* SugarBoxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9104E499259B201800C68B97 /* SugarBoxAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9104E4B1259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxAppTests" */;
+			buildPhases = (
+				9104E496259B201800C68B97 /* Sources */,
+				9104E497259B201800C68B97 /* Frameworks */,
+				9104E498259B201800C68B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9104E49C259B201800C68B97 /* PBXTargetDependency */,
+			);
+			name = SugarBoxAppTests;
+			productName = SugarBoxAppTests;
+			productReference = 9104E49A259B201800C68B97 /* SugarBoxAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9104E4A4259B201800C68B97 /* SugarBoxAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9104E4B4259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxAppUITests" */;
+			buildPhases = (
+				9104E4A1259B201800C68B97 /* Sources */,
+				9104E4A2259B201800C68B97 /* Frameworks */,
+				9104E4A3259B201800C68B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9104E4A7259B201800C68B97 /* PBXTargetDependency */,
+			);
+			name = SugarBoxAppUITests;
+			productName = SugarBoxAppUITests;
+			productReference = 9104E4A5259B201800C68B97 /* SugarBoxAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9104E47C259B201500C68B97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					9104E483259B201500C68B97 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					9104E499259B201800C68B97 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9104E483259B201500C68B97;
+					};
+					9104E4A4259B201800C68B97 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9104E483259B201500C68B97;
+					};
+				};
+			};
+			buildConfigurationList = 9104E47F259B201500C68B97 /* Build configuration list for PBXProject "SugarBoxApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9104E47B259B201500C68B97;
+			productRefGroup = 9104E485259B201500C68B97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9104E483259B201500C68B97 /* SugarBoxApp */,
+				9104E499259B201800C68B97 /* SugarBoxAppTests */,
+				9104E4A4259B201800C68B97 /* SugarBoxAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9104E482259B201500C68B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104E494259B201800C68B97 /* LaunchScreen.storyboard in Resources */,
+				9104E491259B201800C68B97 /* Assets.xcassets in Resources */,
+				9104E48F259B201500C68B97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104E498259B201800C68B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104E4A3259B201800C68B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9104E480259B201500C68B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104E48C259B201500C68B97 /* ViewController.swift in Sources */,
+				9104E488259B201500C68B97 /* AppDelegate.swift in Sources */,
+				9104E48A259B201500C68B97 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104E496259B201800C68B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104E49F259B201800C68B97 /* SugarBoxAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9104E4A1259B201800C68B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9104E4AA259B201800C68B97 /* SugarBoxAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9104E49C259B201800C68B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9104E483259B201500C68B97 /* SugarBoxApp */;
+			targetProxy = 9104E49B259B201800C68B97 /* PBXContainerItemProxy */;
+		};
+		9104E4A7259B201800C68B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9104E483259B201500C68B97 /* SugarBoxApp */;
+			targetProxy = 9104E4A6259B201800C68B97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9104E48D259B201500C68B97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9104E48E259B201500C68B97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9104E492259B201800C68B97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9104E493259B201800C68B97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9104E4AC259B201800C68B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9104E4AD259B201800C68B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9104E4AF259B201800C68B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHACMP5889;
+				INFOPLIST_FILE = SugarBoxApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.SugarBoxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9104E4B0259B201800C68B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHACMP5889;
+				INFOPLIST_FILE = SugarBoxApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.SugarBoxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9104E4B2259B201800C68B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHACMP5889;
+				INFOPLIST_FILE = SugarBoxAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.SugarBoxAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugarBoxApp.app/SugarBoxApp";
+			};
+			name = Debug;
+		};
+		9104E4B3259B201800C68B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHACMP5889;
+				INFOPLIST_FILE = SugarBoxAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.SugarBoxAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugarBoxApp.app/SugarBoxApp";
+			};
+			name = Release;
+		};
+		9104E4B5259B201800C68B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHACMP5889;
+				INFOPLIST_FILE = SugarBoxAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.SugarBoxAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SugarBoxApp;
+			};
+			name = Debug;
+		};
+		9104E4B6259B201800C68B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHACMP5889;
+				INFOPLIST_FILE = SugarBoxAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.SugarBoxAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SugarBoxApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9104E47F259B201500C68B97 /* Build configuration list for PBXProject "SugarBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9104E4AC259B201800C68B97 /* Debug */,
+				9104E4AD259B201800C68B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9104E4AE259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9104E4AF259B201800C68B97 /* Debug */,
+				9104E4B0259B201800C68B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9104E4B1259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9104E4B2259B201800C68B97 /* Debug */,
+				9104E4B3259B201800C68B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9104E4B4259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9104E4B5259B201800C68B97 /* Debug */,
+				9104E4B6259B201800C68B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9104E47C259B201500C68B97 /* Project object */;
+}
