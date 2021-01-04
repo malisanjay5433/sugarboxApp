@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0105FA4A64A5E69B2F07D9A2 /* Pods_SugarBoxAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8B321042D782CEFD345810 /* Pods_SugarBoxAppTests.framework */; };
+		888795909D47BF73895D2C30 /* Pods_SugarBoxApp_SugarBoxAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20D9577F852FC9FDB910FF6 /* Pods_SugarBoxApp_SugarBoxAppUITests.framework */; };
 		9104E488259B201500C68B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E487259B201500C68B97 /* AppDelegate.swift */; };
 		9104E48A259B201500C68B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E489259B201500C68B97 /* SceneDelegate.swift */; };
 		9104E48C259B201500C68B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E48B259B201500C68B97 /* ViewController.swift */; };
@@ -15,6 +17,20 @@
 		9104E494259B201800C68B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9104E492259B201800C68B97 /* LaunchScreen.storyboard */; };
 		9104E49F259B201800C68B97 /* SugarBoxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E49E259B201800C68B97 /* SugarBoxAppTests.swift */; };
 		9104E4AA259B201800C68B97 /* SugarBoxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E4A9259B201800C68B97 /* SugarBoxAppUITests.swift */; };
+		9104E4C1259B399000C68B97 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9104E4C0259B399000C68B97 /* Service.swift */; };
+		91354851259D9D7D00909E1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91354850259D9D7D00909E1E /* HomeViewController.swift */; };
+		91354859259D9E0600909E1E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91354858259D9E0600909E1E /* SearchViewController.swift */; };
+		9135485E259D9E3100909E1E /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9135485D259D9E3100909E1E /* RewardViewController.swift */; };
+		91354864259DA5FC00909E1E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91354863259DA5FC00909E1E /* Extensions.swift */; };
+		91D0266525A040B60066CBDD /* SearchDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0266425A040B60066CBDD /* SearchDataModel.swift */; };
+		91D0267725A2D30E0066CBDD /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0267625A2D30E0066CBDD /* APIConstants.swift */; };
+		91D0268225A2D3500066CBDD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0268125A2D3500066CBDD /* APIError.swift */; };
+		91D0268725A2D3AF0066CBDD /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0268625A2D3AF0066CBDD /* AppUtils.swift */; };
+		91D0268C25A2D41D0066CBDD /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0268B25A2D41D0066CBDD /* ResponseData.swift */; };
+		91D0269425A2D45B0066CBDD /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0269325A2D45B0066CBDD /* RestaurantListViewModel.swift */; };
+		91D026A025A2D8450066CBDD /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0269F25A2D8450066CBDD /* RestaurantCell.swift */; };
+		91D026AF25A2EA730066CBDD /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D026AE25A2EA730066CBDD /* CustomBackgroundView.swift */; };
+		F7AFE859334AE0D799E9FF6F /* Pods_SugarBoxApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E878E3918AFECFA34218F207 /* Pods_SugarBoxApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A8B321042D782CEFD345810 /* Pods_SugarBoxAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SugarBoxAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D2D6BC1185E4B5DDD9A7CB /* Pods-SugarBoxApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxApp.debug.xcconfig"; path = "Target Support Files/Pods-SugarBoxApp/Pods-SugarBoxApp.debug.xcconfig"; sourceTree = "<group>"; };
+		71DE97F849550B0931266ECF /* Pods-SugarBoxApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxApp.release.xcconfig"; path = "Target Support Files/Pods-SugarBoxApp/Pods-SugarBoxApp.release.xcconfig"; sourceTree = "<group>"; };
+		808C2C1438D8F89DC981041D /* Pods-SugarBoxAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxAppTests.release.xcconfig"; path = "Target Support Files/Pods-SugarBoxAppTests/Pods-SugarBoxAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9104E484259B201500C68B97 /* SugarBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9104E487259B201500C68B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9104E489259B201500C68B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,24 @@
 		9104E4A5259B201800C68B97 /* SugarBoxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarBoxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9104E4A9259B201800C68B97 /* SugarBoxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarBoxAppUITests.swift; sourceTree = "<group>"; };
 		9104E4AB259B201800C68B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9104E4C0259B399000C68B97 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		91354850259D9D7D00909E1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		91354858259D9E0600909E1E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9135485D259D9E3100909E1E /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		91354863259DA5FC00909E1E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91D0266425A040B60066CBDD /* SearchDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataModel.swift; sourceTree = "<group>"; };
+		91D0267625A2D30E0066CBDD /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		91D0268125A2D3500066CBDD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		91D0268625A2D3AF0066CBDD /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		91D0268B25A2D41D0066CBDD /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		91D0269325A2D45B0066CBDD /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
+		91D0269F25A2D8450066CBDD /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		91D026AE25A2EA730066CBDD /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		991BFC0969B18E0180E790AD /* Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A068E8101490143FF9B0B4BA /* Pods-SugarBoxAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SugarBoxAppTests/Pods-SugarBoxAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E23A3652DA870B374EDC12 /* Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E878E3918AFECFA34218F207 /* Pods_SugarBoxApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SugarBoxApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20D9577F852FC9FDB910FF6 /* Pods_SugarBoxApp_SugarBoxAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SugarBoxApp_SugarBoxAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7AFE859334AE0D799E9FF6F /* Pods_SugarBoxApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0105FA4A64A5E69B2F07D9A2 /* Pods_SugarBoxAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888795909D47BF73895D2C30 /* Pods_SugarBoxApp_SugarBoxAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +124,8 @@
 				9104E49D259B201800C68B97 /* SugarBoxAppTests */,
 				9104E4A8259B201800C68B97 /* SugarBoxAppUITests */,
 				9104E485259B201500C68B97 /* Products */,
+				C1FC9B499357F564463168ED /* Pods */,
+				B6467C3F23276270999D68B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +142,14 @@
 		9104E486259B201500C68B97 /* SugarBoxApp */ = {
 			isa = PBXGroup;
 			children = (
+				91354862259DA5FC00909E1E /* Uitls */,
+				9135484F259D9D5B00909E1E /* Controller */,
+				9104E4BD259B278A00C68B97 /* Service */,
+				9104E4BB259B277D00C68B97 /* View */,
+				9104E4BA259B277600C68B97 /* Model */,
 				9104E487259B201500C68B97 /* AppDelegate.swift */,
 				9104E489259B201500C68B97 /* SceneDelegate.swift */,
 				9104E48B259B201500C68B97 /* ViewController.swift */,
-				9104E48D259B201500C68B97 /* Main.storyboard */,
 				9104E490259B201800C68B97 /* Assets.xcassets */,
 				9104E492259B201800C68B97 /* LaunchScreen.storyboard */,
 				9104E495259B201800C68B97 /* Info.plist */,
@@ -128,6 +175,102 @@
 			path = SugarBoxAppUITests;
 			sourceTree = "<group>";
 		};
+		9104E4BA259B277600C68B97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91D0268B25A2D41D0066CBDD /* ResponseData.swift */,
+				91D0266425A040B60066CBDD /* SearchDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9104E4BB259B277D00C68B97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9104E4BC259B278300C68B97 /* ViewModel */,
+				91D0269925A2D8360066CBDD /* Cell */,
+				91D0269825A2D8300066CBDD /* Controllers */,
+				9104E48D259B201500C68B97 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9104E4BC259B278300C68B97 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91D0269325A2D45B0066CBDD /* RestaurantListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9104E4BD259B278A00C68B97 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9104E4C0259B399000C68B97 /* Service.swift */,
+				91D0267625A2D30E0066CBDD /* APIConstants.swift */,
+				91D0268125A2D3500066CBDD /* APIError.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9135484F259D9D5B00909E1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91354850259D9D7D00909E1E /* HomeViewController.swift */,
+				91354858259D9E0600909E1E /* SearchViewController.swift */,
+				9135485D259D9E3100909E1E /* RewardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		91354862259DA5FC00909E1E /* Uitls */ = {
+			isa = PBXGroup;
+			children = (
+				91D0268625A2D3AF0066CBDD /* AppUtils.swift */,
+				91354863259DA5FC00909E1E /* Extensions.swift */,
+				91D026AE25A2EA730066CBDD /* CustomBackgroundView.swift */,
+			);
+			path = Uitls;
+			sourceTree = "<group>";
+		};
+		91D0269825A2D8300066CBDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91D0269925A2D8360066CBDD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				91D0269F25A2D8450066CBDD /* RestaurantCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B6467C3F23276270999D68B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E878E3918AFECFA34218F207 /* Pods_SugarBoxApp.framework */,
+				F20D9577F852FC9FDB910FF6 /* Pods_SugarBoxApp_SugarBoxAppUITests.framework */,
+				0A8B321042D782CEFD345810 /* Pods_SugarBoxAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1FC9B499357F564463168ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56D2D6BC1185E4B5DDD9A7CB /* Pods-SugarBoxApp.debug.xcconfig */,
+				71DE97F849550B0931266ECF /* Pods-SugarBoxApp.release.xcconfig */,
+				991BFC0969B18E0180E790AD /* Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig */,
+				E7E23A3652DA870B374EDC12 /* Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig */,
+				A068E8101490143FF9B0B4BA /* Pods-SugarBoxAppTests.debug.xcconfig */,
+				808C2C1438D8F89DC981041D /* Pods-SugarBoxAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9104E4AE259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxApp" */;
 			buildPhases = (
+				B1966A64A72DD50F35B29F6B /* [CP] Check Pods Manifest.lock */,
 				9104E480259B201500C68B97 /* Sources */,
 				9104E481259B201500C68B97 /* Frameworks */,
 				9104E482259B201500C68B97 /* Resources */,
+				36C5F0589B93F7AB56D1ECC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9104E4B1259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxAppTests" */;
 			buildPhases = (
+				1EEE2CF4625ED93EF2363BA1 /* [CP] Check Pods Manifest.lock */,
 				9104E496259B201800C68B97 /* Sources */,
 				9104E497259B201800C68B97 /* Frameworks */,
 				9104E498259B201800C68B97 /* Resources */,
@@ -170,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9104E4B4259B201800C68B97 /* Build configuration list for PBXNativeTarget "SugarBoxAppUITests" */;
 			buildPhases = (
+				900E861DFB4F6F0F1822278C /* [CP] Check Pods Manifest.lock */,
 				9104E4A1259B201800C68B97 /* Sources */,
 				9104E4A2259B201800C68B97 /* Frameworks */,
 				9104E4A3259B201800C68B97 /* Resources */,
+				C0A21DA0FC7A3DF3C073B1DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +401,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EEE2CF4625ED93EF2363BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SugarBoxAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C5F0589B93F7AB56D1ECC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SugarBoxApp/Pods-SugarBoxApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SugarBoxApp/Pods-SugarBoxApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SugarBoxApp/Pods-SugarBoxApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		900E861DFB4F6F0F1822278C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SugarBoxApp-SugarBoxAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1966A64A72DD50F35B29F6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SugarBoxApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A21DA0FC7A3DF3C073B1DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9104E480259B201500C68B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D0268725A2D3AF0066CBDD /* AppUtils.swift in Sources */,
+				91D0267725A2D30E0066CBDD /* APIConstants.swift in Sources */,
 				9104E48C259B201500C68B97 /* ViewController.swift in Sources */,
+				91D026AF25A2EA730066CBDD /* CustomBackgroundView.swift in Sources */,
+				91354859259D9E0600909E1E /* SearchViewController.swift in Sources */,
+				91D0268C25A2D41D0066CBDD /* ResponseData.swift in Sources */,
+				91354851259D9D7D00909E1E /* HomeViewController.swift in Sources */,
+				91D0266525A040B60066CBDD /* SearchDataModel.swift in Sources */,
+				91D026A025A2D8450066CBDD /* RestaurantCell.swift in Sources */,
+				9135485E259D9E3100909E1E /* RewardViewController.swift in Sources */,
+				9104E4C1259B399000C68B97 /* Service.swift in Sources */,
 				9104E488259B201500C68B97 /* AppDelegate.swift in Sources */,
+				91354864259DA5FC00909E1E /* Extensions.swift in Sources */,
 				9104E48A259B201500C68B97 /* SceneDelegate.swift in Sources */,
+				91D0268225A2D3500066CBDD /* APIError.swift in Sources */,
+				91D0269425A2D45B0066CBDD /* RestaurantListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +697,7 @@
 		};
 		9104E4AF259B201800C68B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D2D6BC1185E4B5DDD9A7CB /* Pods-SugarBoxApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +717,7 @@
 		};
 		9104E4B0259B201800C68B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DE97F849550B0931266ECF /* Pods-SugarBoxApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +737,7 @@
 		};
 		9104E4B2259B201800C68B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A068E8101490143FF9B0B4BA /* Pods-SugarBoxAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +760,7 @@
 		};
 		9104E4B3259B201800C68B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 808C2C1438D8F89DC981041D /* Pods-SugarBoxAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +783,7 @@
 		};
 		9104E4B5259B201800C68B97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991BFC0969B18E0180E790AD /* Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +804,7 @@
 		};
 		9104E4B6259B201800C68B97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E23A3652DA870B374EDC12 /* Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DBn-Ki-7QA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reward-->
+        <scene sceneID="vdX-tl-PoP">
+            <objects>
+                <viewController id="Xy2-oh-r4u" customClass="RewardViewController" customModule="SugarBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UtM-ip-Fb0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5zF-Xn-bGD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reward" image="icon_reward" id="7Gv-uN-bHf">
+                        <color key="badgeColor" red="0.1644612849" green="0.19838151339999999" blue="0.56590616699999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedTintColor">
+                                <color key="value" red="0.1644612849" green="0.19838151339999999" blue="0.56590616699999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EW-Fj-BeN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="102"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="oZI-Y7-1BR">
+            <objects>
+                <viewController id="jyc-yB-5PA" customClass="SearchViewController" customModule="SugarBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVK-0u-4ly">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="b2x-8h-091"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="icon_search" id="lqO-gC-qUF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfR-Eo-12W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="-295"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ynK-Ks-yGM">
+            <objects>
+                <tabBarController id="DBn-Ki-7QA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="agg-Ee-EoT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                            <color key="value" red="0.1644612849" green="0.19838151339999999" blue="0.56590616699999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="selectedItemTintColor">
+                            <color key="value" red="0.95555728669999995" green="0.095032401380000006" blue="0.47101420160000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="tuT-bz-mwr" kind="relationship" relationship="viewControllers" id="Ed6-QS-Ewg"/>
+                        <segue destination="jyc-yB-5PA" kind="relationship" relationship="viewControllers" id="BSY-x3-FWh"/>
+                        <segue destination="Xy2-oh-r4u" kind="relationship" relationship="viewControllers" id="1bR-Vh-xpj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5Q-xE-Pnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1159" y="-201"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="PPH-lo-ZGC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tuT-bz-mwr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="icon_home" id="Wiv-8v-JSe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iwh-9I-74l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rxC-kl-wz0" kind="relationship" relationship="rootViewController" id="T95-yg-9hq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Eq-10-mR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="-210"/>
+        </scene>
+        <!--NEARBYRESTAURANTS-->
+        <scene sceneID="Rpz-aa-ypI">
+            <objects>
+                <tableViewController storyboardIdentifier="idRestaurantListVC" id="rxC-kl-wz0" customClass="HomeViewController" customModule="SugarBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" rowHeight="365" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Tp-sZ-Pxv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestaurantCell" rowHeight="200" id="n6l-TC-Wxq" customClass="RestaurantCell" customModule="Find_My_Dine" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n6l-TC-Wxq" id="lib-6s-7tS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-Cg-Len" customClass="CustomBackgroundView" customModule="SugarBoxApp" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="9" width="398" height="187"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8E-25-HyA">
+                                                    <rect key="frame" x="189" y="157" width="201" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvK-Ce-VPx">
+                                                    <rect key="frame" x="189" y="71" width="201" height="79"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0r-g8-bSa">
+                                                    <rect key="frame" x="189" y="38" width="201" height="25"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                                    <color key="textColor" systemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImgPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Y4a-0v-bfE">
+                                                    <rect key="frame" x="1" y="1" width="180" height="185"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="sNG-aK-Wb0"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="PvK-Ce-VPx" secondAttribute="trailing" constant="8" id="3zc-yG-aGq"/>
+                                                <constraint firstItem="X8E-25-HyA" firstAttribute="leading" secondItem="Y4a-0v-bfE" secondAttribute="trailing" constant="8" id="Rx9-WG-1qE"/>
+                                                <constraint firstItem="X8E-25-HyA" firstAttribute="top" secondItem="PvK-Ce-VPx" secondAttribute="bottom" constant="7" id="UPy-uZ-9Ff"/>
+                                                <constraint firstItem="L0r-g8-bSa" firstAttribute="top" secondItem="EIS-Cg-Len" secondAttribute="top" constant="38" id="YD2-24-kth"/>
+                                                <constraint firstItem="L0r-g8-bSa" firstAttribute="leading" secondItem="Y4a-0v-bfE" secondAttribute="trailing" constant="8" id="bJU-03-ORe"/>
+                                                <constraint firstAttribute="bottom" secondItem="X8E-25-HyA" secondAttribute="bottom" constant="12" id="bef-Os-b2p"/>
+                                                <constraint firstAttribute="bottom" secondItem="Y4a-0v-bfE" secondAttribute="bottom" constant="1" id="cru-ha-eY2"/>
+                                                <constraint firstAttribute="trailing" secondItem="X8E-25-HyA" secondAttribute="trailing" constant="8" id="l7q-NJ-lqQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="L0r-g8-bSa" secondAttribute="trailing" constant="8" id="lp1-7c-puw"/>
+                                                <constraint firstItem="Y4a-0v-bfE" firstAttribute="top" secondItem="EIS-Cg-Len" secondAttribute="top" constant="1" id="pIN-4Z-rdW"/>
+                                                <constraint firstItem="Y4a-0v-bfE" firstAttribute="leading" secondItem="EIS-Cg-Len" secondAttribute="leading" constant="1" id="ucw-lh-Oge"/>
+                                                <constraint firstItem="PvK-Ce-VPx" firstAttribute="top" secondItem="L0r-g8-bSa" secondAttribute="bottom" constant="8" symbolic="YES" id="w8P-cV-Ytc"/>
+                                                <constraint firstItem="PvK-Ce-VPx" firstAttribute="leading" secondItem="Y4a-0v-bfE" secondAttribute="trailing" constant="8" id="wVd-H0-InC"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="1" height="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                    <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="EIS-Cg-Len" secondAttribute="bottom" constant="4" id="D1Y-Rj-OL3"/>
+                                        <constraint firstItem="EIS-Cg-Len" firstAttribute="top" secondItem="lib-6s-7tS" secondAttribute="top" constant="9" id="nPO-zD-hqw"/>
+                                        <constraint firstAttribute="trailing" secondItem="EIS-Cg-Len" secondAttribute="trailing" constant="8" id="tpL-DS-QT3"/>
+                                        <constraint firstItem="EIS-Cg-Len" firstAttribute="leading" secondItem="lib-6s-7tS" secondAttribute="leading" constant="8" id="wUC-Vp-Wi1"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgImage" destination="Y4a-0v-bfE" id="DaL-9p-frU"/>
+                                    <outlet property="lblAddress" destination="PvK-Ce-VPx" id="S0e-VW-ttW"/>
+                                    <outlet property="lblCost" destination="X8E-25-HyA" id="ZT8-H1-ka9"/>
+                                    <outlet property="lblName" destination="L0r-g8-bSa" id="vVl-ha-rKQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rxC-kl-wz0" id="TtT-L7-2U1"/>
+                            <outlet property="delegate" destination="rxC-kl-wz0" id="4sF-so-Fy6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NEARBYRESTAURANTS" id="cI8-5T-ooj"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="mDk-hZ-wdv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hX2-I8-YR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127.536231884058" y="-213.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImgPlaceholder" width="610" height="325"/>
+        <image name="icon_home" width="30.666666030883789" height="28"/>
+        <image name="icon_reward" width="27.666666030883789" height="28"/>
+        <image name="icon_search" width="26.333333969116211" height="28"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

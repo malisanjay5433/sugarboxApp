@@ -1,0 +1,6 @@
+framework module Pods_SugarBoxAppTests {
+  umbrella header "Pods-SugarBoxAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
