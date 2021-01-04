@@ -13,8 +13,8 @@ struct AppConstantValues {
 
 struct APIServerConstants {
     static let serverBaseURL = URL(string: "https://developers.zomato.com/api/v2.1/")!
-    static let serverKey = "8810681b9527918633f01be52e6f97b3"
-    static let serverTimeout = 30.0
+    static let userKey = "8810681b9527918633f01be52e6f97b3"
+    static let serverTimeout = 60.0
 }
 
 protocol Endpoint {
@@ -29,7 +29,7 @@ extension APIConstants: Endpoint {
     var path: String {
         switch self {
         case .restaurantsList(let params):
-            return "/search?\(params)"
+            return "search?\(params)"
     }
 }
     var reqType: String {

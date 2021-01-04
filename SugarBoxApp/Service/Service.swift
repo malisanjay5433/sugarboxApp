@@ -11,7 +11,7 @@ import UIKit
 
 let dictHeaders = ["Content-Type" : "application/json",
                    "Accept-Language" : "en-us",
-                   "user-key" : APIServerConstants.serverKey]
+                   "user-key" : APIServerConstants.userKey]
 protocol Networking {
     
     //MARK: Completion Handler
@@ -36,6 +36,7 @@ struct APINetworking: Networking {
         urlRequest.cachePolicy = .reloadIgnoringLocalCacheData
         urlRequest.httpMethod = reqEndpoint.reqType
         
+        print("urlRequest:\(urlRequest)")
         //Headers
         for (key, value) in dictHeaders {
             urlRequest.setValue(value, forHTTPHeaderField: key)
@@ -79,6 +80,7 @@ struct APINetworking: Networking {
                 return
             }
             //MARK: Valid Response
+            
             completion(true, decodedData, nil)
         }
         urlSession.resume()

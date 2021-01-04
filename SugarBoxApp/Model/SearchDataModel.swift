@@ -21,6 +21,8 @@ struct RestaurantData: Codable {
     var thumb: String?
     var featured_image: String?
     var phone_numbers: String?
+    var user_rating: UserRatingData?
+
 }
 
 struct RestaurantsMainData: Codable {
@@ -32,4 +34,8 @@ struct AllRestaurantsData: Codable {
     
     var restaurants: [RestaurantsMainData]
     var results_found: Int
+}
+struct UserRatingData: Codable {
+    var rating_text: String
+    var rating_color: String
 }

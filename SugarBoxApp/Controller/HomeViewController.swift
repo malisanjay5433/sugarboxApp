@@ -50,16 +50,10 @@ class HomeViewController: UITableViewController {
     @objc func buttonTapped(sender:UIButton){
         
     }
-    //Load Local Restaurant Data
-    func loadLocalRestaurantData() {
-        self.viewModel.fetchLocalRestaurantData()
-    }
-    
-    
     //Fetch Restuarants from APIs
     func fetchRestaurantsData(isFresh: Bool) {
         self.isLoadingData = true
-        let reqParams = String(format: "locations?query=Mumbai&lat=%.3f&lon=%.3f&entity_type=city&start=%d&count=20", self.lastLatValue, self.lastLngValue, self.currentRecord)
+        let reqParams = String(format: "lat=%.3f&lon=%.3f&entity_type=city&start=%d&count=20", self.lastLatValue, self.lastLngValue, self.currentRecord)
         self.viewModel.fetchNewRestaurantData(params: reqParams, isFreshDataRequired: isFresh)
     }
 }
@@ -91,8 +85,6 @@ extension HomeViewController: RestaurantViewModelDelegate {
                     self.tableView.refreshControl?.endRefreshing()
                 }
             }
-            //Store Restaurants in Cache
-            viewModel.storeRestaurantDataInLocalCache(resturants: self.arrRestaurants)
         }
         else {
             print("Error ===> \(error ?? "")")
@@ -100,8 +92,12 @@ extension HomeViewController: RestaurantViewModelDelegate {
     }
 }
 //MARK: Table View Methods
+
 extension HomeViewController {
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let objRestaurant = self.arrRestaurants[indexPath.row]
+        performSegue(withIdentifier:"DetailedVC", sender:nil)
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -121,9 +117,8 @@ extension HomeViewController {
         
         //Load Image
         if let resCell = cell as? RestaurantCell {
-            
+        
             let objRestaurant = self.arrRestaurants[indexPath.row]
-            
             guard let featuredImage = objRestaurant.featured_image, featuredImage.count > 0 else {
                 resCell.imgImage.image = UIImage(named: "ImgPlacholder")
                 return
@@ -134,8 +129,7 @@ extension HomeViewController {
                 resImageURL = "\(resImageURL)?\(params)"
             }
             
-            resCell.layer.masksToBounds = true
-            resCell.imgImage.sd_setImage(with: URL(string: resImageURL), placeholderImage: UIImage(named: "ImgPlacholder"), options: .continueInBackground) { (image, error, type, url) in
+            resCell.imgImage.sd_setImage(with: URL(string: resImageURL), placeholderImage: UIImage(named: "ImgPlaceholder"), options: .continueInBackground) { (image, error, type, url) in
                 
                 if let img = image {
                     resCell.imgImage.image = img
@@ -143,5 +137,11 @@ extension HomeViewController {
             }
         }
     }
-    
-}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailedVC"{
+            guard let selectedPath = tableView.indexPathForSelectedRow else { return }
+            let vc  = segue.destination as! DetailedViewController
+            vc.restoData = self.arrRestaurants[selectedPath.row]
+        }
+     }
+  }

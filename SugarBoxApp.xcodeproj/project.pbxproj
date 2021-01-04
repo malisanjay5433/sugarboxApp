@@ -30,6 +30,7 @@
 		91D0269425A2D45B0066CBDD /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0269325A2D45B0066CBDD /* RestaurantListViewModel.swift */; };
 		91D026A025A2D8450066CBDD /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D0269F25A2D8450066CBDD /* RestaurantCell.swift */; };
 		91D026AF25A2EA730066CBDD /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D026AE25A2EA730066CBDD /* CustomBackgroundView.swift */; };
+		91D026BD25A2F84A0066CBDD /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D026BC25A2F84A0066CBDD /* DetailedViewController.swift */; };
 		F7AFE859334AE0D799E9FF6F /* Pods_SugarBoxApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E878E3918AFECFA34218F207 /* Pods_SugarBoxApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		91D0269325A2D45B0066CBDD /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
 		91D0269F25A2D8450066CBDD /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		91D026AE25A2EA730066CBDD /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		91D026BC25A2F84A0066CBDD /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		991BFC0969B18E0180E790AD /* Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A068E8101490143FF9B0B4BA /* Pods-SugarBoxAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SugarBoxAppTests/Pods-SugarBoxAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7E23A3652DA870B374EDC12 /* Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SugarBoxApp-SugarBoxAppUITests/Pods-SugarBoxApp-SugarBoxAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		9135484F259D9D5B00909E1E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91D026BC25A2F84A0066CBDD /* DetailedViewController.swift */,
 				91354850259D9D7D00909E1E /* HomeViewController.swift */,
 				91354858259D9E0600909E1E /* SearchViewController.swift */,
 				9135485D259D9E3100909E1E /* RewardViewController.swift */,
@@ -517,6 +520,7 @@
 				91D0268C25A2D41D0066CBDD /* ResponseData.swift in Sources */,
 				91354851259D9D7D00909E1E /* HomeViewController.swift in Sources */,
 				91D0266525A040B60066CBDD /* SearchDataModel.swift in Sources */,
+				91D026BD25A2F84A0066CBDD /* DetailedViewController.swift in Sources */,
 				91D026A025A2D8450066CBDD /* RestaurantCell.swift in Sources */,
 				9135485E259D9E3100909E1E /* RewardViewController.swift in Sources */,
 				9104E4C1259B399000C68B97 /* Service.swift in Sources */,

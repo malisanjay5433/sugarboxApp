@@ -124,29 +124,23 @@ extension UIApplication{
             manager.stopUpdatingLocation()
             manager.delegate = nil
             
-            var latValue = 21.17
-            var lngValue = 72.83
+            var latValue = 19.076090
+            var lngValue = 72.877426
             
             if let lastLocation = manager.location {
-                
                 let locValue = lastLocation.coordinate
                 latValue = locValue.latitude
                 lngValue = locValue.longitude
             }
-            
             var dictLocation = [String : Double]()
             dictLocation["lat"] = latValue
-            dictLocation["lng"] = lngValue
-            
+            dictLocation["lng"] = lngValue            
             //Location Changed
             let locationInfo: [String : [String : Double]] = ["user_location" : dictLocation]
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: AppConstantValues.constLocationChanged), object: nil, userInfo: locationInfo)
         }
         
         func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-            
-            print("Fail to get Location \(error)")
-            
             //Location Changed
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: AppConstantValues.constLocationChanged), object: nil, userInfo: nil)
         }
